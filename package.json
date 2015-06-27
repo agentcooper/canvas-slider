@@ -1,7 +1,7 @@
 {
   "name": "slider-challange",
   "version": "1.0.0",
-  "description": "Canvas slider",
+  "description": "Canvas slider with lazy loading",
   "main": "index.js",
   "scripts": {
     "build": "browserify src/slider.js --standalone Slider -t babelify > dist/slider.build.js",
