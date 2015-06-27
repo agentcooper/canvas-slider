@@ -1,13 +1,13 @@
 {
   "name": "slider-challange",
   "version": "1.0.0",
-  "description": "",
+  "description": "Canvas slider",
   "main": "index.js",
   "scripts": {
-    "build": "browserify slider.js --standalone Slider -t babelify > slider.build.js",
+    "build": "browserify src/slider.js --standalone Slider -t babelify > dist/slider.build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Artem Tyurin",
   "license": "ISC",
   "devDependencies": {
     "babelify": "^6.1.2"
