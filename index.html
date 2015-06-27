@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slider</title>
+    <script src="slider.build.js"></script>
+
+    <style>
+      body {
+        font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, "Lucida Grande", sans-serif;
+      }
+
+      .slider {
+        border: 1px solid #ccc;
+        cursor: -webkit-grab;
+        cursor: -moz-grab;
+      }
+
+      .drag-active {
+        cursor: -webkit-grabbing;
+        cursor: -moz-grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Slider will load images as you drag.</p>
+
+    <canvas class="slider js-slider" width="640" height="400" />
+    <script>
+      var slider = new Slider({
+        el: document.querySelector('.js-slider'),
+        images: [
+          'images/0.jpg',
+          'images/1.jpg',
+          'images/2.jpg',
+          'images/3.jpg'
+        ],
+        backgroundColor: 'rgb(242, 242, 242)'
+      });
+    </script>
+  </body>
+</html>
